@@ -1,19 +1,10 @@
-import os
-from setuptools import setup, find_packages
+import setuptools
 
-
-def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
-
-
-setup(
-    name="{{ cookiecutter.python_module_name }}",
-
-    description="{{ cookiecutter.description }}",
-
-    author="{{ cookiecutter.author_name }}",
-
-    packages=find_packages(exclude=['data', 'figures', 'output', 'notebooks']),
-
-    long_description=read('README.md'),
+setuptools.setup(
+    name='{{ cookiecutter.repo_name }}',
+    packages=['{{ cookiecutter.python_module_name }}'],
+    version='0.1.0',
+    description='{{ cookiecutter.description }}',
+    author='{{ cookiecutter.author_name }}',
+    license='GPL-3.0',
 )

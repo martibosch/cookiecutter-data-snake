@@ -1,23 +1,18 @@
-.PHONY: create_environment git
+.PHONY: create_environment
 
 #################################################################################
 # GLOBALS                                                                       #
 #################################################################################
 
 PROJECT_NAME = {{ cookiecutter.repo_name }}
-CONDA_ENVIRONMENT = {{ cookiecutter.conda_environment }}
-PYTHON_VERSION = {{ cookiecutter.python_version }}
 
 #################################################################################
 # COMMANDS                                                                      #
 #################################################################################
 
 ## Set up python interpreter environment
-environment:
+create_environment:
 	conda env create -f environment.yml
-
-git:
-	git init
 
 
 #################################################################################

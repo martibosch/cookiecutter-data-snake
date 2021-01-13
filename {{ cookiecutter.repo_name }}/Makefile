@@ -1,4 +1,4 @@
-.PHONY: create_environment
+.PHONY: create_environment register_ipykernel
 
 #################################################################################
 # GLOBALS                                                                       #
@@ -13,6 +13,11 @@ PROJECT_NAME = {{ cookiecutter.repo_name }}
 ## Set up python interpreter environment
 create_environment:
 	conda env create -f environment.yml
+
+## Register the environment as an IPython kernel for Jupyter
+register_ipykernel:
+	python -m ipykernel install --user --name {{ cookiecutter.repo_name }} \
+		--display-name "Python ({{ cookiecutter.repo_name }})"
 
 
 #################################################################################

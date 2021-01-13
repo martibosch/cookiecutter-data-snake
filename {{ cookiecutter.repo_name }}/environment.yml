@@ -9,7 +9,7 @@ dependencies:
   - wheel
   - click
   - flake8
-  - flake8-isort
+  - flake8-isort>=4
   - python-dotenv>=0.5.1
   - python=3
   - ipykernel

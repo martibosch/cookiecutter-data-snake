@@ -16,9 +16,8 @@ create_environment:
 
 ## Register the environment as an IPython kernel for Jupyter
 register_ipykernel:
-	python -m ipykernel install --user --name {{ cookiecutter.repo_name }} \
-		--display-name "Python ({{ cookiecutter.repo_name }})"
-
+	python -m ipykernel install --user --name $(PROJECT_NAME) \
+		--display-name "Python ($(PROJECT_NAME))"
 
 #################################################################################
 # Self Documenting Commands                                                     #

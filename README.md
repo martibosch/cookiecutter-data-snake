@@ -1,30 +1,25 @@
-# Cookiecutter Data Science for Python
+# Cookiecutter Data Snake
 
-A minimal _Python_ project structure for doing and sharing data science work.
+A reproducible data science template using a bunch of snakes :snake:, i.e., Python, snakemake, mamba, and more.
 
-This cookiecutter is based on [Cookiecutter Data Science](http://drivendata.github.io/cookiecutter-data-science/).
+This cookiecutter is based on [`cookiecutter-data-science`](http://drivendata.github.io/cookiecutter-data-science/), with the following main differences:
 
+- [snakemake](https://snakemake.github.io) to orchestrate the data analysis workflow instead of [GNU Make](https://www.gnu.org/software/make) ([recommended in `cookiecutter-data-science`](https://drivendata.github.io/cookiecutter-data-science/)). The advantages of snakemake are its more Pythonic syntax as well as the availability of a dedicated code formatter, i.e., [snakefmt](https://github.com/snakemake/snakefmt) (see pre-commit item below).
+- [pre-commit](https://pre-commit.com) to manage multi-language pre-commit hooks, including: [black](https://black.readthedocs.io/), [isort](https://pycqa.github.io/isort) and [flake8](https://flake8.pycqa.org) to format and lint Python files (`.py`), [nbstripout](https://github.com/kynan/nbstripout) and [nbQA](https://nbqa.readthedocs.io) to format and lint Jupyter Notebooks (`.ipynb`); [snakefmt](https://github.com/snakemake/snakefmt) to format Snakefiles and more.
+- [mamba](https://github.com/mamba-org/mamba) as a package manager, which provides a CLI that is almost identical to [conda](https://conda.io) but *(much) faster*.
 
-### Requirements to use the cookiecutter template:
------------
- - Python 2.7 or 3.5
- - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: This can be installed with pip by or conda depending on how you manage your Python packages:
+## Requirements to use the cookiecutter template:
 
-``` bash
-$ pip install cookiecutter
-```
+- Python 3.7+
+- [cookiecutter](http://cookiecutter.readthedocs.org), which can be installed with pip, conda or mamba (see [the official installation instructions](https://cookiecutter.readthedocs.org/en/latest/installation.html)).
+- [mamba](https://github.com/mamba-org/mamba), which can be installed using conda or [mambaforge](https://github.com/conda-forge/miniforge#mambaforge) (see [the official installation instructions](https://github.com/mamba-org/mamba#installation))
 
-or
-
-``` bash
-$ conda config --add channels conda-forge
-$ conda install cookiecutter
-```
-
-
-### To start a new project, run:
-------------
+## To start a new project, run:
 
 ```bash
-$ cookiecutter https://github.com/hgrif/cookiecutter-ds-python
+$ cookiecutter https://github.com/martibosch/cookiecutter-data-snake
 ```
+
+## Acknowledgments
+
+- Project based on [Henk Griffioen's version](https://github.com/hgrif/cookiecutter-ds-python) of the [cookiecutter data science project template](https://drivendata.github.io/cookiecutter-data-science). #cookiecutterdatascience

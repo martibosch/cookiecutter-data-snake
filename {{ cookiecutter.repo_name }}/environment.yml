@@ -12,3 +12,4 @@ dependencies:
   - python={{ cookiecutter.python_version }}
   - ipykernel
   - snakemake
+  - poetry

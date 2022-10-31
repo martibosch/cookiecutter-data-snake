@@ -97,3 +97,6 @@ ENV/
 /data/
 /figures/
 /output/
+
+# snakemake
+.snakemake*

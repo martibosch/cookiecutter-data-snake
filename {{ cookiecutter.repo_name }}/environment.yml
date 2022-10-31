@@ -3,13 +3,10 @@ channels:
   - conda-forge
   - bioconda
 dependencies:
+  - ipykernel
   - pip
   - pip:
     - -e .
-  - setuptools
-  - wheel
-  - click
-  - python={{ cookiecutter.python_version }}
-  - ipykernel
-  - snakemake
   - poetry
+  - python={{ cookiecutter.python_version }}
+  - snakemake

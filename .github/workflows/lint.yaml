@@ -1,11 +1,11 @@
-name: Lint
+name: lint
 
 on:
   push:
     branches: [ "develop", "main" ]
 
 concurrency:
-  group: {% raw %}${{ github.head_ref || github.run_id }}{% endraw %}
+  group: ${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
 
 jobs:

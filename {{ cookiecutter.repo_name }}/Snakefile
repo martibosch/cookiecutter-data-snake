@@ -15,7 +15,7 @@ rule create_environment:
         shell(
             f"mamba create -n {PROJECT_NAME} -c conda-forge python={PYTHON_VERSION} -y"
         )
-        shell(f"mamba env update -n {PROJECT_NAME} --file environment.yml")
+        shell(f"mamba env update -n {PROJECT_NAME} -f environment.yaml")
 
 
 rule register_ipykernel:

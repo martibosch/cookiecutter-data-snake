@@ -6,6 +6,8 @@
 
 A reproducible data science template using a bunch of snakes :snake:, i.e., Python, snakemake, mamba, and more.
 
+![skeptical snake](https://raw.githubusercontent.com/martibosch/cookiecutter-data-snake/main/data-snake.png "skeptical snake")
+
 This cookiecutter is based on [`cookiecutter-data-science`](http://drivendata.github.io/cookiecutter-data-science/), with the following main differences:
 
 - [snakemake](https://snakemake.github.io) to orchestrate the data analysis workflow instead of [GNU Make](https://www.gnu.org/software/make) ([recommended in `cookiecutter-data-science`](https://drivendata.github.io/cookiecutter-data-science/)). The advantages of snakemake are its more Pythonic syntax as well as the availability of a dedicated code formatter, i.e., [snakefmt](https://github.com/snakemake/snakefmt) (see pre-commit item below).

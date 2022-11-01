@@ -2,3 +2,25 @@ docs/site/
 
 # OSX Junk
 .DS_Store
+
+# Python byte-compiled
+__pycache__/
+*.py[cod]
+
+# Python Distribution / packaging
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# tox
+.tox

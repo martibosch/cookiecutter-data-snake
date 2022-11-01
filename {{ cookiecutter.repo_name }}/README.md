@@ -1,5 +1,7 @@
-\[!\[lint\](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/actions/workflows/ci.yaml/badge.svg)\](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/actions/workflows/lint.yaml)
-[![GitHub license](https://img.shields.io/github/license/%7B%7Bcookiecutter.github_username%7D%7D/%7B%7Bcookiecutter.repo_name%7D%7D.svg)](https://github.com/%7B%7Bcookiecutter.github_username%7D%7D/%7B%7Bcookiecutter.repo_name%7D%7D/blob/master/LICENSE)
+<!-- prettier-ignore-start -->
+[![lint](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/actions/workflows/ci.yaml/badge.svg)](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/actions/workflows/lint.yaml)
+[![GitHub license](https://img.shields.io/github/license/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}.svg)](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/blob/main/LICENSE)
+<!-- prettier-ignore-end -->
 
 # {{cookiecutter.project_name}}
 

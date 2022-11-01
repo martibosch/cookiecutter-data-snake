@@ -1,15 +1,15 @@
 name: |
   {{ cookiecutter.repo_name }}
 channels:
-- conda-forge
-- bioconda
+  - conda-forge
+  - bioconda
 dependencies:
-- git
-- ipykernel
-- pip
-- poetry
-- pre-commit
-- python={{ cookiecutter.python_version }}
-- snakemake
-- pip:
-  - -e .
+  - git
+  - ipykernel
+  - pip
+  - poetry
+  - pre-commit
+  - python={{ cookiecutter.python_version }}
+  - snakemake
+  - pip:
+      - -e .

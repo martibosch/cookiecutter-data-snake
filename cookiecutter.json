@@ -1,9 +1,9 @@
 {
-    "project_name": "My awesome data science project",
-    "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
-    "python_module_name": "{{ cookiecutter.repo_name.replace('-', '_') }}",
-    "python_version": "3.10",
-    "author_name": "Martí Bosch",
-    "github_username": "martibosch",
-    "description": "A short description of the project."
+  "project_name": "My awesome data science project",
+  "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+  "python_module_name": "{{ cookiecutter.repo_name.replace('-', '_') }}",
+  "python_version": "3.10",
+  "author_name": "Martí Bosch",
+  "github_username": "martibosch",
+  "description": "A short description of the project."
 }

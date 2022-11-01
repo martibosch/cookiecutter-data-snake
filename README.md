@@ -1,5 +1,6 @@
 ![lint](https://github.com/martibosch/cookiecutter-data-snake/actions/workflows/lint.yaml/badge.svg)
 ![tests](https://github.com/martibosch/cookiecutter-data-snake/actions/workflows/tests.yaml/badge.svg)
+[![GitHub license](https://img.shields.io/github/license/martibosch/cookiecutter-data-snake.svg)](https://github.com/martibosch/cookiecutter-data-snake/blob/main/LICENSE)
 
 # Cookiecutter Data Snake
 

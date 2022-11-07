@@ -1,5 +1,5 @@
 # prettier-ignore
-name: {{ cookiecutter.repo_name }}
+name: {{ cookiecutter.repo_name }}  # yamllint disable-line
 channels:
   - conda-forge
   - bioconda
@@ -9,7 +9,8 @@ dependencies:
   - pip
   - poetry
   - pre-commit
-  - python={{ cookiecutter.python_version }}
+  # prettier-ignore
+  - python={{ cookiecutter.python_version }}  # yamllint disable-line
   - snakemake
   - pip:
       - -e .

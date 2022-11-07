@@ -35,7 +35,7 @@ def test_license(default_baked_project):
 
 
 def test_requirements(default_baked_project):
-    reqs_path = os.path.join(default_baked_project, "environment.yaml")
+    reqs_path = os.path.join(default_baked_project, "environment.yml")
 
     assert os.path.exists(reqs_path)
     assert no_curlies(reqs_path)

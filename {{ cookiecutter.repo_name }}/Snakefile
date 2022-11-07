@@ -12,10 +12,7 @@ DATA_PROCESSED_DIR = f"{DATA_DIR}/processed"
 # 0. conda/mamba environment -----------------------------------------------------------
 rule create_environment:
     run:
-        shell(
-            f"mamba create -n {PROJECT_NAME} -c conda-forge python={PYTHON_VERSION} -y"
-        )
-        shell(f"mamba env update -n {PROJECT_NAME} -f environment.yaml")
+        "mamba env create -f environment.yml"
 
 
 rule register_ipykernel:

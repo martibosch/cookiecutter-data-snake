@@ -1,5 +1,5 @@
-name: |
-  {{ cookiecutter.repo_name }}
+# prettier-ignore
+name: {{ cookiecutter.repo_name }}
 channels:
   - conda-forge
   - bioconda

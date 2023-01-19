@@ -17,5 +17,5 @@ rule create_environment:
 
 rule register_ipykernel:
     shell:
-        f"python -m ipykernel install --user --name {PROJECT_NAME} --display-name "
-        f'"Python ({PROJECT_NAME})"'
+        f"python -m ipykernel install --user --name {PROJECT_NAME} --display-name"
+        f' "Python ({PROJECT_NAME})"'

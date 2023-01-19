@@ -5,9 +5,16 @@ build-backend = "poetry.core.masonry.api"
 [tool.black]
 line-length = 88
 
-[tool.isort]
-profile = "black"
-known_first_party = "{{ cookiecutter.python_module_name }}"
+[tool.ruff]
+line-length = 88
+select = ["D", "E", "F", "I"]
+
+[tool.ruff.isort]
+known-first-party = ["{{ cookiecutter.python_module_name }}"]
+
+[tool.nbqa.addopts]
+# ignore documentation errors in notebooks
+ruff = ["--ignore=D"]
 
 [tool.poetry]
 name = "{{ cookiecutter.repo_name }}"

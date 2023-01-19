@@ -54,17 +54,10 @@ repos:
     hooks:
       - id: black
 
-  - repo: https://github.com/timothycrosley/isort
-    rev: 5.10.0
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.0.225
     hooks:
-      - id: isort
-
-  - repo: https://gitlab.com/pycqa/flake8
-    rev: 4.0.0
-    hooks:
-      - id: flake8
-        args: ["--config=setup.cfg"]
-        additional_dependencies: [flake8-isort, flake8-docstrings]
+      - id: ruff
 
   - repo: https://github.com/kynan/nbstripout
     rev: 0.5.0
@@ -73,11 +66,10 @@ repos:
         args: ["--keep-output"]
 
   - repo: https://github.com/nbQA-dev/nbQA
-    rev: 1.1.1
+    rev: 1.6.1
     hooks:
-      - id: nbqa-isort
       - id: nbqa-black
-      - id: nbqa-flake8
+      - id: nbqa-ruff
 
   - repo: https://github.com/snakemake/snakefmt
     rev: v0.6.0

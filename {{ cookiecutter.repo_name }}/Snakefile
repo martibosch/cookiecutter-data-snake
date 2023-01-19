@@ -11,7 +11,7 @@ DATA_PROCESSED_DIR = f"{DATA_DIR}/processed"
 
 # 0. conda/mamba environment -----------------------------------------------------------
 rule create_environment:
-    run:
+    shell:
         "mamba env create -f environment.yml"
 
 

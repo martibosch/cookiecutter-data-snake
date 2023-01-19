@@ -1,3 +1,5 @@
+from os import path
+
 PROJECT_NAME = "{{ cookiecutter.repo_name }}"
 CODE_DIR = "{{ cookiecutter.python_module_name }}"
 PYTHON_VERSION = "{{ cookiecutter.python_version }}"
@@ -5,9 +7,9 @@ PYTHON_VERSION = "{{ cookiecutter.python_version }}"
 NOTEBOOKS_DIR = "notebooks"
 
 DATA_DIR = "data"
-DATA_RAW_DIR = f"{DATA_DIR}/raw"
-DATA_INTERIM_DIR = f"{DATA_DIR}/interim"
-DATA_PROCESSED_DIR = f"{DATA_DIR}/processed"
+DATA_RAW_DIR = path.join(DATA_DIR, "raw")
+DATA_INTERIM_DIR = path.join(DATA_DIR, "interim")
+DATA_PROCESSED_DIR = path.join(DATA_DIR, "processed")
 
 # 0. conda/mamba environment -----------------------------------------------------------
 rule create_environment:

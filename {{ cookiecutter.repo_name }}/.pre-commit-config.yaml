@@ -19,11 +19,6 @@ repos:
       - id: yamllint
         args: ["-d relaxed"]
 
-  - repo: https://github.com/asottile/setup-cfg-fmt
-    rev: v1.20.1
-    hooks:
-      - id: setup-cfg-fmt
-
   - repo: https://github.com/executablebooks/mdformat
     rev: 0.7.14 # Use the ref you want to point at
     hooks:
@@ -37,12 +32,6 @@ repos:
     rev: 0.18.4
     hooks:
       - id: check-github-workflows
-
-  - repo: https://github.com/MarcoGorelli/madforhooks
-    rev: 0.3.0
-    hooks:
-      - id: conda-env-sorter
-      - id: check-execution-order
 
   - repo: https://github.com/asottile/pyupgrade
     rev: v2.37.2

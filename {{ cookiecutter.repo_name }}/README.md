@@ -41,6 +41,7 @@ git init
 5. Activate pre-commit for the git repository:
 
 ```bash
+pre-commit install
 pre-commit install --hook-type commit-msg
 ```
 
@@ -48,7 +49,7 @@ pre-commit install --hook-type commit-msg
 
 ```bash
 git add .
-git commit -m "initial commit"
+git commit -m "feat: initial commit"
 ```
 
 7. Enjoy! :rocket:

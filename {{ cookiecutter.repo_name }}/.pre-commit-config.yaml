@@ -38,14 +38,10 @@ repos:
     hooks:
       - id: pyupgrade
 
-  - repo: https://github.com/psf/black
-    rev: 22.6.0
-    hooks:
-      - id: black
-
   - repo: https://github.com/charliermarsh/ruff-pre-commit
-    rev: v0.0.225
+    rev: v0.1.6
     hooks:
+      - id: ruff-format
       - id: ruff
 
   - repo: https://github.com/kynan/nbstripout
@@ -55,7 +51,7 @@ repos:
         args: ["--keep-output"]
 
   - repo: https://github.com/nbQA-dev/nbQA
-    rev: 1.6.1
+    rev: 1.7.0
     hooks:
       - id: nbqa-black
       - id: nbqa-ruff

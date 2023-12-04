@@ -25,9 +25,6 @@ Repository = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecut
 [tool.setuptools.packages.find]
 include = ["{{ cookiecutter.python_module_name }}", "{{ cookiecutter.python_module_name }}.*"]
 
-[tool.black]
-line-length = 88
-
 [tool.ruff]
 line-length = 88
 select = ["D", "E", "F", "I"]

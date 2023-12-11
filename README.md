@@ -12,7 +12,7 @@ This cookiecutter is based on [`cookiecutter-data-science`](http://drivendata.gi
 
 - [snakemake](https://snakemake.github.io) to orchestrate the data analysis workflow instead of [GNU Make](https://www.gnu.org/software/make) ([recommended in `cookiecutter-data-science`](https://drivendata.github.io/cookiecutter-data-science/)). The advantages of snakemake are its more Pythonic syntax as well as the availability of a dedicated code formatter, i.e., [snakefmt](https://github.com/snakemake/snakefmt) (see pre-commit item below).
 - [mamba](https://github.com/mamba-org/mamba) as a package manager, which provides a CLI that is almost identical to [conda](https://conda.io) but _(much) faster_.
-- [pre-commit](https://pre-commit.com) to manage multi-language pre-commit hooks, including: [black](https://black.readthedocs.io/), [isort](https://pycqa.github.io/isort) and [flake8](https://flake8.pycqa.org) to format and lint Python files (`.py`), [nbstripout](https://github.com/kynan/nbstripout) and [nbQA](https://nbqa.readthedocs.io) to format and lint Jupyter Notebooks (`.ipynb`); [snakefmt](https://github.com/snakemake/snakefmt) to format Snakefiles and more.
+- [pre-commit](https://pre-commit.com) to manage multi-language pre-commit hooks, including: [ruff](https://github.com/astral-sh/ruff) to format and lint Python files (`.py`), [nbstripout](https://github.com/kynan/nbstripout) and [nbQA](https://nbqa.readthedocs.io) to format and lint Jupyter Notebooks (`.ipynb`); [snakefmt](https://github.com/snakemake/snakefmt) to format Snakefiles and more.
 
 ## Requirements to use the cookiecutter template:
 

@@ -1,4 +1,4 @@
-![lint](https://github.com/martibosch/cookiecutter-data-snake/actions/workflows/lint.yaml/badge.svg)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/martibosch/cookiecutter-data-snake/main.svg)](https://results.pre-commit.ci/latest/github/martibosch/cookiecutter-data-snake/main)
 ![tests](https://github.com/martibosch/cookiecutter-data-snake/actions/workflows/tests.yaml/badge.svg)
 [![GitHub license](https://img.shields.io/github/license/martibosch/cookiecutter-data-snake.svg)](https://github.com/martibosch/cookiecutter-data-snake/blob/main/LICENSE)
 

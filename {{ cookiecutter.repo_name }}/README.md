@@ -1,5 +1,4 @@
 <!-- prettier-ignore-start -->
-[![lint](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/actions/workflows/ci.yaml/badge.svg)](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/actions/workflows/lint.yaml)
 [![GitHub license](https://img.shields.io/github/license/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}.svg)](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/blob/main/LICENSE)
 <!-- prettier-ignore-end -->
 
@@ -53,6 +52,8 @@ git commit -m "feat: initial commit"
 ```
 
 7. Enjoy! :rocket:
+
+_Optional_: if you are using GitHub, you can set up [pre-commit.ci](https://pre-commit.ci) as a continuous integration service for pre-commit.
 
 ## Acknowledgments
 

@@ -36,8 +36,9 @@ repos:
   - repo: https://github.com/charliermarsh/ruff-pre-commit
     rev: v0.9.2
     hooks:
-      - id: ruff-format
       - id: ruff
+        args: [--fix]
+      - id: ruff-format
 
   - repo: https://github.com/kynan/nbstripout
     rev: 0.8.1
@@ -48,8 +49,11 @@ repos:
   - repo: https://github.com/nbQA-dev/nbQA
     rev: 1.9.1
     hooks:
-      - id: nbqa-black
-      - id: nbqa-ruff
+      - id: nbqa-ruff-check
+        args: ["--fix", "--ignore=D,I"]
+      - id: nbqa-ruff-format
+      - id: nbqa-ruff-check
+        args: ["--ignore=D,I"]
 
   - repo: https://github.com/snakemake/snakefmt
     rev: v0.10.2

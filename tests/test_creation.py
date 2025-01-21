@@ -58,7 +58,6 @@ def test_pyproject(default_baked_project):
 def test_folders(default_baked_project):
     expected_dirs = [
         ".github",
-        ".github/workflows",
         "data",
         "figures",
         "my_awesome_data_science_project",

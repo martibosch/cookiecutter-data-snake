@@ -28,11 +28,6 @@ repos:
           - mdformat-gfm
           - mdformat-black
 
-  - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.31.0
-    hooks:
-      - id: check-github-workflows
-
   - repo: https://github.com/asottile/pyupgrade
     rev: v3.19.1
     hooks:

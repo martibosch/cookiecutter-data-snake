@@ -11,6 +11,7 @@ DATA_RAW_DIR = path.join(DATA_DIR, "raw")
 DATA_INTERIM_DIR = path.join(DATA_DIR, "interim")
 DATA_PROCESSED_DIR = path.join(DATA_DIR, "processed")
 
+
 # 0. conda/mamba environment -----------------------------------------------------------
 rule create_environment:
     shell:

@@ -81,7 +81,7 @@ def no_curlies(filepath):
     """Utility to make sure no curly braces appear in a file.
     That is, was jinja able to render everthing?
     """
-    with open(filepath, "r") as f:
+    with open(filepath) as f:
         data = f.read()
 
     template_strings = ["{{", "}}", "{%", "%}"]

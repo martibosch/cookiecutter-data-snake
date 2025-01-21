@@ -6,25 +6,26 @@ build-backend = "setuptools.build_meta"
 name = "{{ cookiecutter.repo_name }}"
 version = "0.1.0"
 description = "{{ cookiecutter.description }}"
-authors = [{ name = "{{ cookiecutter.author_name }}", email = "{{ cookiecutter.email }}" }]
+authors = [{name = "{{ cookiecutter.author_name }}", email = "{{ cookiecutter.email }}"}]
 readme = "README.md"
-license = { text = "GPL-3.0-only" }
+license = {text = "GPL-3.0-only"}
 classifiers = [
-    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12"
 ]
 requires-python = ">=3.9"
 
 [project.urls]
 Repository = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}"
 
-[tool.setuptools.packages.find]
-include = ["{{ cookiecutter.python_module_name }}", "{{ cookiecutter.python_module_name }}.*"]
+[tool.nbqa.addopts]
+# ignore documentation errors in notebooks
+ruff = ["--ignore=D"]
 
 [tool.ruff]
 line-length = 88
@@ -35,12 +36,11 @@ docstring-code-format = true
 [tool.ruff.lint]
 select = ["D", "E", "F", "I"]
 
-[tool.ruff.lint.pydocstyle]
-convention = "numpy"
-
 [tool.ruff.lint.isort]
 known-first-party = ["{{ cookiecutter.python_module_name }}"]
 
-[tool.nbqa.addopts]
-# ignore documentation errors in notebooks
-ruff = ["--ignore=D"]
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.setuptools.packages.find]
+include = ["{{ cookiecutter.python_module_name }}", "{{ cookiecutter.python_module_name }}.*"]

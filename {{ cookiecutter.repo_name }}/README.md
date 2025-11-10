@@ -1,5 +1,7 @@
 <!-- prettier-ignore-start -->
-[![GitHub license](https://img.shields.io/github/license/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}.svg)](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/blob/main/LICENSE)
+
+\[!\[GitHub license\](https://img.shields.io/github/license/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}.svg)\](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}/blob/main/LICENSE)
+
 <!-- prettier-ignore-end -->
 
 # {{cookiecutter.project_name}}

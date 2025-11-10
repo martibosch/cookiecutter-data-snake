@@ -4,25 +4,25 @@ default_language_version:
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-toml
 
   - repo: https://github.com/adrienverge/yamllint.git
-    rev: v1.35.1
+    rev: v1.37.1
     hooks:
       - id: yamllint
         exclude: "{{ cookiecutter.repo_name }}/environment.yml"
 
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: v4.1.0
+    rev: v4.10.0
     hooks:
       - id: commitizen
 
   - repo: https://github.com/tox-dev/tox-ini-fmt
-    rev: 1.4.1
+    rev: 1.7.0
     hooks:
       - id: tox-ini-fmt
 
@@ -33,7 +33,7 @@ repos:
         exclude: "{{ cookiecutter.repo_name }}/environment.yml"
 
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.31.0
+    rev: 0.34.1
     hooks:
       - id: check-github-workflows
 

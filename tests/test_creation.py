@@ -10,7 +10,6 @@ CCDS_ROOT = os.path.abspath(os.path.join(__file__, os.pardir, os.pardir))
 @pytest.fixture(scope="function")
 def default_baked_project(tmpdir):
     out_dir = str(tmpdir.mkdir("data-project"))
-
     main.cookiecutter(CCDS_ROOT, no_input=True, extra_context={}, output_dir=out_dir)
 
     # default project name is project_name

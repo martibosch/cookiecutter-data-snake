@@ -1,9 +1,22 @@
-[build-system]
-requires = ["setuptools >= 35.0.2", "wheel >= 0.29.0"]
-build-backend = "setuptools.build_meta"
-
-[tool.black]
+[tool.ruff]
 line-length = 88
 
-[tool.isort]
-profile = "black"
+[tool.pixi.dependencies]
+cookiecutter = ">=2.6.0,<3"
+python = ">=3.10,<=3.14"
+
+[tool.pixi.environments]
+test = ["test"]
+
+[tool.pixi.feature.test.dependencies]
+pytest = ">=9.0.0,<10"
+
+[tool.pixi.feature.test.tasks]
+test = {cmd = "pytest"}
+
+[tool.pixi.workspace]
+authors = ["Martí Bosch <marti.bosch@protonmail.com>"]
+channels = ["conda-forge"]
+name = "cookiecutter-data-snake"
+platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
+version = "0.1.0"

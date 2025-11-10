@@ -2,7 +2,7 @@
   "project_name": "My awesome data science project",
   "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
   "python_module_name": "{{ cookiecutter.repo_name.replace('-', '_') }}",
-  "python_version": "3.12",
+  "python_version": "3.13",
   "author_name": "Martí Bosch",
   "github_username": "martibosch",
   "email": "marti.bosch@epfl.ch",

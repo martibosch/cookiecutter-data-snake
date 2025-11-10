@@ -78,7 +78,7 @@ def test_folders(default_baked_project):
 
 def no_curlies(filepath):
     """Utility to make sure no curly braces appear in a file.
-    That is, was jinja able to render everthing?
+    That is, was jinja able to render everything?
     """
     with open(filepath) as f:
         data = f.read()

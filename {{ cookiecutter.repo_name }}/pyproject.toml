@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+requires = ["uv_build>=0.9.4,<0.10.0"]
+build-backend = "uv_build"
 
 [project]
 name = "{{ cookiecutter.repo_name }}"
@@ -12,20 +12,36 @@ license = {text = "GPL-3.0-only"}
 classifiers = [
   "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
   "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
-  "Programming Language :: Python :: 3.13"
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14"
 ]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 
 [project.urls]
-Repository = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}"
+repository = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}"
 
 [tool.nbqa.addopts]
 # ignore documentation errors in notebooks
 ruff = ["--ignore=D"]
+
+[tool.pixi.dependencies]
+ipykernel = ">=7.1.0,<8"
+pre-commit = ">=4.4.0,<5"
+python = "=={{ cookiecutter.python_version }}"
+snakemake = ">=9.13.7,<10"
+
+[tool.pixi.pypi-dependencies]
+{{ cookiecutter.python_module_name }} = {path = ".", editable = true}
+
+[tool.pixi.workspace]
+authors = ["{{ cookiecutter.author_name }} {{ cookiecutter.email }}>"]
+channels = ["conda-forge", "bioconda"]
+name = "{{ cookiecutter.repo_name }}"
+platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
+version = "0.1.0"
 
 [tool.ruff]
 line-length = 88
@@ -42,5 +58,6 @@ known-first-party = ["{{ cookiecutter.python_module_name }}"]
 [tool.ruff.lint.pydocstyle]
 convention = "numpy"
 
-[tool.setuptools.packages.find]
-include = ["{{ cookiecutter.python_module_name }}", "{{ cookiecutter.python_module_name }}.*"]
+[tool.uv.build-backend]
+module-name = "{{ cookiecutter.python_module_name }}"
+module-root = ""

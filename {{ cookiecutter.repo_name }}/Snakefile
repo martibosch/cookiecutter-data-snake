@@ -1,12 +1,12 @@
-from os import path
+from pathlib import Path
 
 PROJECT_NAME = "{{ cookiecutter.repo_name }}"
 CODE_DIR = "{{ cookiecutter.python_module_name }}"
 PYTHON_VERSION = "{{ cookiecutter.python_version }}"
 
-NOTEBOOKS_DIR = "notebooks"
+NOTEBOOKS_DIR = Path("notebooks")
 
-DATA_DIR = "data"
-DATA_RAW_DIR = path.join(DATA_DIR, "raw")
-DATA_INTERIM_DIR = path.join(DATA_DIR, "interim")
-DATA_PROCESSED_DIR = path.join(DATA_DIR, "processed")
+DATA_DIR = Path("data")
+DATA_RAW_DIR = DATA_DIR / "raw"
+DATA_INTERIM_DIR = DATA_DIR / "interim"
+DATA_PROCESSED_DIR = DATA_DIR / "processed"

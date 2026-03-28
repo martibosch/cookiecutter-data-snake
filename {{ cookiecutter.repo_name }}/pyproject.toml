@@ -23,6 +23,8 @@ requires-python = ">=3.10"
 [project.urls]
 repository = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}"
 
+[tool.mdformat]
+number = true
 
 [tool.pixi.dependencies]
 ipykernel = ">=7.1.0,<8"

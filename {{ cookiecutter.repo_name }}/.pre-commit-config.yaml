@@ -69,15 +69,6 @@ repos:
       - id: nbstripout
         args: ["--keep-output"]
 
-  - repo: https://github.com/nbQA-dev/nbQA
-    rev: 1.9.1
-    hooks:
-      - id: nbqa-ruff-check
-        args: ["--fix", "--ignore=D,I"]
-      - id: nbqa-ruff-format
-      - id: nbqa-ruff-check
-        args: ["--ignore=D,I"]
-
   - repo: https://github.com/snakemake/snakefmt
     rev: v0.11.2
     hooks:

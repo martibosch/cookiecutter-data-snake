@@ -9,7 +9,7 @@ test = ["test"]
 pytest = ">=9.0.0,<10"
 
 [tool.pixi.feature.test.tasks]
-test = {cmd = "pytest"}
+test = { cmd = "pytest" }
 
 [tool.pixi.workspace]
 authors = ["Martí Bosch <marti.bosch@protonmail.com>"]
